@@ -9,20 +9,23 @@ import MaterialsInventory from './components/MaterialsInventory'
 import Login from './components/Login'
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
 
-  const handleLogin = (credentials) => {
-    // In a real application, you would validate credentials against a backend
-    if (credentials.username === 'admin' && credentials.password === 'password') {
-      setIsAuthenticated(true)
-    } else {
-      alert('Invalid credentials')
-    }
-  }
+// remove the commented code for authentication
 
-  if (!isAuthenticated) {
-    return <Login onLogin={handleLogin} />
-  }
+  // const [isAuthenticated, setIsAuthenticated] = useState(false)
+
+  // const handleLogin = (credentials) => {
+  //   // In a real application, you would validate credentials against a backend
+  //   if (credentials.username === 'admin' && credentials.password === 'password') {
+  //     setIsAuthenticated(true)
+  //   } else {
+  //     alert('Invalid credentials')
+  //   }
+  // }
+
+  // if (!isAuthenticated) {
+  //   return <Login onLogin={handleLogin} />
+  // }
 
   return (
     <Router>
